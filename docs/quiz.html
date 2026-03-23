@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommender - Quiz</title>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="history.html">History</a></li>
+        </ul>
+    </nav>
+    <hr>
+</header>
+
+<main>
+    <section id="quiz-questions">
+        <h2>What kind of movie are you looking for?</h2>
+        <form action="#results" method="GET">
+            <fieldset>
+                <p>Are you in the mood for an action-packed movie?</p>
+                <button type="button">yes</button>
+                <button type="button">?</button>
+                <button type="button">no</button>
+            </fieldset>
+
+            <fieldset>
+                <p>Do you want to watch a comedy?</p>
+                <button type="button">yes</button>
+                <button type="button">?</button>
+                <button type="button">no</button>
+            </fieldset>
+
+            <fieldset>
+                <p>Are you looking for something animated?</p>
+                <button type="button">yes</button>
+                <button type="button">?</button>
+                <button type="button">no</button>
+            </fieldset>
+
+            <p>more questions here...</p>
+
+            <button type="submit">Submit Preferences</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <section id="results">
+        <h2>Your Top 5 Movie Options:</h2>
+        <ol>
+            <li>Movie Option 1
+                <button type="button">Pick this</button>
+            </li>
+            <li>Movie Option 2
+                <button type="button">Pick this</button>
+            </li>
+            <li>Movie Option 3
+                <button type="button">Pick this</button>
+            </li>
+            <li>Movie Option 4
+                <button type="button">Pick this</button>
+            </li>
+            <li>Movie Option 5
+                <button type="button">Pick this</button>
+            </li>
+        </ol>
+    </section>
+</main>
+</body>
+</html>
