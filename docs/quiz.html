@@ -4,70 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Recommender - Quiz</title>
+<!--    <link rel="stylesheet" href="./styles/style.css">-->
 </head>
-<body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="quiz.html">Quiz</a></li>
-            <li><a href="history.html">History</a></li>
+<body class="quiz-page">
+<header class="site-header">
+    <nav class="main-nav">
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="quiz.html" class="nav-link active">Quiz</a></li>
+            <li><a href="history.html" class="nav-link">History</a></li>
         </ul>
     </nav>
-    <hr>
+    <hr class="header-divider">
 </header>
 
-<main>
-    <section id="quiz-questions">
-        <h2>What kind of movie are you looking for?</h2>
-        <form action="#results" method="GET">
-            <fieldset>
-                <p>Are you in the mood for an action-packed movie?</p>
-                <button type="button">yes</button>
-                <button type="button">?</button>
-                <button type="button">no</button>
+<main class="main-content">
+    <section class="quiz-container">
+        <h2 class="section-title">What kind of movie are you looking for?</h2>
+
+        <form action="#results" method="GET" class="quiz-form">
+            <fieldset class="question-group">
+                <p class="question-text">Are you in the mood for an action-packed movie?</p>
+                <div class="answer-options">
+                    <button type="button" class="btn btn-option">yes</button>
+                    <button type="button" class="btn btn-option">?</button>
+                    <button type="button" class="btn btn-option">no</button>
+                </div>
             </fieldset>
 
-            <fieldset>
-                <p>Do you want to watch a comedy?</p>
-                <button type="button">yes</button>
-                <button type="button">?</button>
-                <button type="button">no</button>
+            <fieldset class="question-group">
+                <p class="question-text">Do you want to watch a comedy?</p>
+                <div class="answer-options">
+                    <button type="button" class="btn btn-option">yes</button>
+                    <button type="button" class="btn btn-option">?</button>
+                    <button type="button" class="btn btn-option">no</button>
+                </div>
             </fieldset>
 
-            <fieldset>
-                <p>Are you looking for something animated?</p>
-                <button type="button">yes</button>
-                <button type="button">?</button>
-                <button type="button">no</button>
+            <fieldset class="question-group">
+                <p class="question-text">Are you looking for something animated?</p>
+                <div class="answer-options">
+                    <button type="button" class="btn btn-option">yes</button>
+                    <button type="button" class="btn btn-option">?</button>
+                    <button type="button" class="btn btn-option">no</button>
+                </div>
             </fieldset>
 
-            <p>more questions here...</p>
+            <p class="more-questions-text">more questions here...</p>
 
-            <button type="submit">Submit Preferences</button>
+            <button type="submit" class="btn btn-submit">Submit Preferences</button>
         </form>
     </section>
 
-    <hr>
+    <hr class="section-divider">
 
-    <section id="results">
-        <h2>Your Top 5 Movie Options:</h2>
-        <ol>
-            <li>Movie Option 1
-                <button type="button">Pick this</button>
-            </li>
-            <li>Movie Option 2
-                <button type="button">Pick this</button>
-            </li>
-            <li>Movie Option 3
-                <button type="button">Pick this</button>
-            </li>
-            <li>Movie Option 4
-                <button type="button">Pick this</button>
-            </li>
-            <li>Movie Option 5
-                <button type="button">Pick this</button>
-            </li>
+    <section id="results" class="results-container">
+        <h2 class="results-title">Your Top 5 Movie Options:</h2>
+        <ol class="results-list">
+            <li class="result-item">Movie Option 1 <button type="button" class="btn btn-select">Pick this</button></li>
+            <li class="result-item">Movie Option 2 <button type="button" class="btn btn-select">Pick this</button></li>
+            <li class="result-item">Movie Option 3 <button type="button" class="btn btn-select">Pick this</button></li>
+            <li class="result-item">Movie Option 4 <button type="button" class="btn btn-select">Pick this</button></li>
+            <li class="result-item">Movie Option 5 <button type="button" class="btn btn-select">Pick this</button></li>
         </ol>
     </section>
 </main>

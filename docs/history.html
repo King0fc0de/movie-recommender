@@ -4,78 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Recommender - History</title>
+<!--    <link rel="stylesheet" href="./styles/style.css">-->
 </head>
-<body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="quiz.html">Quiz</a></li>
-            <li><a href="history.html">History</a></li>
+<body class="history-page">
+<header class="site-header">
+    <nav class="main-nav">
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="quiz.html" class="nav-link">Quiz</a></li>
+            <li><a href="history.html" class="nav-link active">History</a></li>
         </ul>
     </nav>
-    <hr>
+    <hr class="header-divider">
 </header>
 
-<main>
-    <section>
-        <h2>Movies you watched in the past</h2>
-        <button type="button">Clear All History</button>
+<main class="main-content">
+    <section class="history-header-section">
+        <h2 class="section-title">Movies you watched in the past</h2>
+        <button type="button" class="btn btn-clear">Clear All History</button>
     </section>
 
-    <hr>
+    <hr class="section-divider">
 
-    <article>
-        <img src="placeholder.jpg" alt="Movie Poster" width="300" height="150">
-        <div>
-            <h2>Inception</h2>
-            <ul>
-                <li>148 min</li>
-                <li>Sci-Fi, Action</li>
-                <li>Watched 2 days ago</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Your personal rating: 5/5 Stars</h3>
-            <button type="button">Remove</button>
-        </div>
-    </article>
+    <div class="history-list">
+        <article class="history-card">
+            <img src="placeholder.jpg" alt="Movie Poster" class="movie-poster" width="300" height="150">
+            <div class="movie-info">
+                <h2 class="movie-title">Inception</h2>
+                <ul class="movie-meta">
+                    <li>148 min</li>
+                    <li>Sci-Fi, Action</li>
+                    <li>Watched 2 days ago</li>
+                </ul>
+            </div>
+            <div class="movie-action">
+                <h3 class="user-rating">Your personal rating: 5/5 Stars</h3>
+                <button type="button" class="btn btn-remove">Remove</button>
+            </div>
+        </article>
 
-    <hr>
+        <hr class="item-divider">
 
-    <article>
-        <img src="placeholder.jpg" alt="Movie Poster" width="300" height="150">
-        <div>
-            <h2>The Grand Budapest Hotel</h2>
-            <ul>
-                <li>99 min</li>
-                <li>Comedy, Drama</li>
-                <li>Watched 1 week ago</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Your personal rating: 4/5 Stars</h3>
-            <button type="button">Remove</button>
-        </div>
-    </article>
+        <article class="history-card">
+            <img src="placeholder.jpg" alt="Movie Poster" class="movie-poster" width="300" height="150">
+            <div class="movie-info">
+                <h2 class="movie-title">The Grand Budapest Hotel</h2>
+                <ul class="movie-meta">
+                    <li>99 min</li>
+                    <li>Comedy, Drama</li>
+                    <li>Watched 1 week ago</li>
+                </ul>
+            </div>
+            <div class="movie-action">
+                <h3 class="user-rating">Your personal rating: 4/5 Stars</h3>
+                <button type="button" class="btn btn-remove">Remove</button>
+            </div>
+        </article>
 
-    <hr>
+        <hr class="item-divider">
 
-    <article>
-        <img src="placeholder.jpg" alt="Movie Poster" width="300" height="150">
-        <div>
-            <h2>Dune</h2>
-            <ul>
-                <li>155 min</li>
-                <li>Sci-Fi, Adventure</li>
-                <li>Watched 1 month ago</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Your personal rating: No rating left</h3>
-            <button type="button">Remove</button>
-        </div>
-    </article>
+        <article class="history-card">
+            <img src="placeholder.jpg" alt="Movie Poster" class="movie-poster" width="300" height="150">
+            <div class="movie-info">
+                <h2 class="movie-title">Dune</h2>
+                <ul class="movie-meta">
+                    <li>155 min</li>
+                    <li>Sci-Fi, Adventure</li>
+                    <li>Watched 1 month ago</li>
+                </ul>
+            </div>
+            <div class="movie-action">
+                <h3 class="user-rating">Your personal rating: No rating left</h3>
+                <button type="button" class="btn btn-remove">Remove</button>
+            </div>
+        </article>
+    </div>
 </main>
 </body>
 </html>
